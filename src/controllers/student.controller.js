@@ -48,7 +48,7 @@ async function getStudent(req, res) {
     return res.status(500).send(response);
   }
 
-  if (data.lenght === 0) {
+  if (data.length === 0) {
     response.error = 'User not found';
     return res.status(404).send(response);
   }
